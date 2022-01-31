@@ -1,0 +1,14 @@
+diff --git a/fs/namei.c b/fs/namei.c
+index 914178cdbe94..0d67e6664c6a 100644
+--- a/fs/namei.c
++++ b/fs/namei.c
+@@ -3632,6 +3632,9 @@ static struct dentry *filename_create(int dfd, struct filename *name,
+ 	 * Do the final lookup.
+ 	 */
+ 	lookup_flags |= LOOKUP_CREATE | LOOKUP_EXCL;
++	if (is_dir) {
++		lookup_flags |= LOOKUP_DIRECTORY;
++	}
+ 	inode_lock_nested(path->dentry->d_inode, I_MUTEX_PARENT);
+ 	dentry = __lookup_hash(&last, path->dentry, lookup_flags);
+ 	if (IS_ERR(dentry))
