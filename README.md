@@ -4,7 +4,7 @@ The BetrFS team strongly believes that reproducibility of results is essential
 to the research process. In pursuit of this ideal, we provide this document and
 the accompanying scripts in this directory to help reproduce the results
 presented in our EuroSys 2022 paper,
-*A Compleat File System for Commodity SSDs*.
+*BetrFS: A Compleat File System for Commodity SSDs*.
 This paper presents BetrFS v0.6, and compares it to BetrFS v0.4 and several
 commodity filesystems.
 
