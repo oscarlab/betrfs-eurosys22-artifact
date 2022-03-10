@@ -417,3 +417,6 @@ utilized, then wait a bit longer for the experiment to finish. Otherwise,
 reboot the machine.
 
 For further questions, please open an issue in this repository.
+
+[![DOI](https://zenodo.org/badge/453248864.svg)](https://zenodo.org/badge/latestdoi/453248864)
+
